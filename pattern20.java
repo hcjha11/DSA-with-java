@@ -32,23 +32,13 @@ public class Main {
                 if(j ==1 || j == n){
                 System.out.print("*\t");
                 }
-                else if(i ==n/2+1 && j==i){
+                else if(i>n/2 &&(i==j ||i+j==n+1)){
                     System.out.print("*\t");
-
                 }
-                else if(i == n-1){
-                    if(j ==n/2+1){
-                        System.out.print("\t");
-
-                    }else{
-                        System.out.print("*\t");
-
-                    }
-                }
-                
                 else{
                     System.out.print("\t");
                 }
+            
             }
 
             System.out.println();
